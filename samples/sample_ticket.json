@@ -1,0 +1,11 @@
+{
+  "key": "DEMO-1",
+  "fields": {
+    "summary": "Login: valid user can sign in and invalid password is rejected",
+    "issuetype": {"name": "Story"},
+    "priority": {"name": "Medium"},
+    "status": {"name": "Ready for QA"},
+    "labels": ["login", "qa-automation"],
+    "description": "As a registered user I want to log in on https://www.saucedemo.com so that I can see the product catalogue.\n\nTest data\n- Valid user: standard_user / secret_sauce\n- Locked user: locked_out_user / secret_sauce\n\nAcceptance Criteria\n- Given I am on the login page, when I enter a valid username and password and click Login, then I land on the Products page (URL contains /inventory.html and the page title text is \"Products\").\n- Given I am on the login page, when I enter a valid username and a wrong password and click Login, then I stay on the login page and an error message containing \"Username and password do not match\" is shown.\n- Given I am on the login page, when I click Login with both fields empty, then an error message containing \"Username is required\" is shown.\n- Given I log in as the locked user, then an error containing \"locked out\" is shown."
+  }
+}
